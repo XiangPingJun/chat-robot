@@ -35,4 +35,4 @@ sudo pip install python-firebase
 screen -d -m python ai.py &> log.log
 ```
 
-> It will start talking every 4 minutes
+> It will start talking about every 4 minutes
