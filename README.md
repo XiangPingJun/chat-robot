@@ -4,17 +4,17 @@ An interesting (indiscreet) chat robot for [stream-me-board](https://github.com/
 Uses [National Academy for Educational Research Segmentor](https://github.com/naernlp/Segmentor) for natural language processing.
 > Warning, what it says could be totally nasty in sometimes.
 
-## Talk what you talk
+## Talk what you are talking!
 
 <img src='http://i.imgur.com/L9CYdDt.png'>
 
 > The robot will extract the most popular noun part from chat messages and combine to a decent script.
 
-## Talk what you talk
+## It will also cue you!
 
 <img src='http://i.imgur.com/SplxupV.jpg'>
 
-> It will randomally cue sombody in the chatroom
+> It will randomally cue someone in the chatroom
 
 ## Installation
 
