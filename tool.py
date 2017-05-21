@@ -45,9 +45,12 @@ def getRandUser():
     return name
 
 def hasStopWords(str):
-    stopWords = [u'晚安', u'說話', u'條件', u'講話', u'', u'關係', u'系統']
+    stopWords = [u'晚安', u'說話', u'條件', u'講話', u'關係', u'系統']
     for stop in stopWords:
-        if stop in str:
+        if 0 == str.find(stop):
+            if str == stop:
+                return True
+        elif str.find(stop) > 0:
             return True
     return False
 
