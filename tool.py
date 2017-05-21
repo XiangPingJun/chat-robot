@@ -44,15 +44,19 @@ def getRandUser():
         name += u'網友'
     return name
 
+def hasStopWords(str):
+    stopWords = [u'晚安', u'說話', u'條件', u'講話', u'', u'關係', u'系統']
+    for stop in stopWords:
+        if stop in str:
+            return True
+    return False
+
 def replaceKeyword(sentence, input, pos):
     global said_keyword
     candidate = []
     for keyword in seg.getNoun(input):
-        stop = [u'晚安', u'說話', u'條件', u'講話', u'', u'關係', u'我', u'你']
-        if not keyword or keyword in stop:
+        if hasStopWords(keyword):
             continue
-        if u'系統'==keyword:
-            keyword = '我'
         if not keyword in said_keyword:
             candidate.append(keyword)
     random.shuffle(said_keyword)
