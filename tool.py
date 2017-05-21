@@ -48,7 +48,7 @@ def replaceKeyword(sentence, input, pos):
     global said_keyword
     candidate = []
     for keyword in seg.getNoun(input):
-        stop = [u'晚安', u'說話', u'條件', u'講話', u'', u'關係']
+        stop = [u'晚安', u'說話', u'條件', u'講話', u'', u'關係', u'我', u'你']
         if not keyword or keyword in stop:
             continue
         if u'系統'==keyword:
